@@ -23,7 +23,7 @@ jobs:
                  distribution: 'adopt'
 
         - name: Build with Gradle
-          run: ./gradlew build
+          run: sudo ./gradlew build
 
         # - name: Create JAR file
         #   run: ./gradlew jar
