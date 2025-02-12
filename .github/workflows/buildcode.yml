@@ -46,7 +46,7 @@ jobs:
           env: 
             JF_URL: https://trial1dnxmv.jfrog.io
             JF_ACCESS_TOKEN: ${{ secrets.JFROG }}
-            JF_ARTIFACTORY_REPOSITORY: repository
+            
 
         # - name: Create JAR file
         #   run: ./gradlew jar
