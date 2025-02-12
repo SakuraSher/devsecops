@@ -16,19 +16,19 @@ jobs:
         - name: Checkout code
           uses: actions/checkout@v3
 
-        - name: Set up JDK 17
-          uses: actions/setup-java@v3
-          with:
-                java-version: '17'
+        # - name: Set up JDK 17
+        #   uses: actions/setup-java@v3
+        #   with:
+        #         java-version: '17'
 
-        - name: Build with Gradle
-          run: ./gradlew build
+        # - name: Build with Gradle
+        #   run: ./gradlew build
 
-        - name: Create JAR file
-          run: ./gradlew jar
+        # - name: Create JAR file
+        #   run: ./gradlew jar
 
-        - name: Upload JAR file
-          uses: actions/upload-artifact@v3
-          with:
-                name: my-app
-                path: build/libs/*.jar
+        # - name: Upload JAR file
+        #   uses: actions/upload-artifact@v3
+        #   with:
+        #         name: my-app
+        #         path: build/libs/*.jar
