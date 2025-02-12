@@ -33,11 +33,11 @@ jobs:
         - name: Build with Maven
           run: mvn clean install
         
-        # - name: create jar files
-        #   uses: actions/upload-artifact@v3
-        #   with:
-        #     name: jar
-        #     path: target/*.jar
+        - name: create jar files
+          uses: actions/upload-artifact@v3
+          with:
+            name: jar
+            path: target/*.jar
 
         # - name: Create JAR file
         #   run: ./gradlew jar
