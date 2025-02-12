@@ -48,7 +48,7 @@ jobs:
             JF_ACCESS_TOKEN: ${{ secrets.JFROG }}
         
         - name: Upload to JFrog
-          run: sudo jf rt u "target/*.jar" "petclinic" --build-name="petclinic" --build-number=${{ github.run_number }}
+          run:  jf rt u "target/*.jar" "petclinicrep" --build-name="petclinic" --build-number=${{ github.run_number }}
           
 
         # - name: Create JAR file

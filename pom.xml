@@ -6,13 +6,13 @@
   <groupId>org.springframework.samples</groupId>
   <artifactId>spring-petclinic</artifactId>
   <version>3.2.0-SNAPSHOT</version>
-  <distributionManagement>
+  <!-- <distributionManagement>
     <snapshotRepository>
         <id>snapshots</id>
         <name>a0bgoeupml6mb-artifactory-primary-0-snapshots</name>
         <url>https://trial1dnxmv.jfrog.io/artifactory/petclinic-libs-snapshot</url>
     </snapshotRepository>
-</distributionManagement>
+</distributionManagement> -->
 
   <parent>
     <groupId>org.springframework.boot</groupId>
