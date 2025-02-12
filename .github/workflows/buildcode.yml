@@ -23,8 +23,10 @@ jobs:
                  distribution: 'adopt'
                  cache: gradle
 
+
         - name: Build with gradle
           run: ./gradlew build
+
 
         # - name: Create JAR file
         #   run: ./gradlew jar
