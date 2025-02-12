@@ -17,7 +17,5 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
           mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar  \
-            -Dsonar.projectKey=SakuraSher_devsecops \
-            -Dsonar.organization=sakurasher \
-            -Dsonar.host.url=https://sonarcloud.io \
-            -Dsonar.login=${{ secrets.SONAR_TOKEN }}  
+            -Dsonar.projectKey=SakuraSher_devsecops 
+            
