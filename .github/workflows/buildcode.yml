@@ -21,9 +21,10 @@ jobs:
           with:
                  java-version: '17'
                  distribution: 'adopt'
+                 cache: gradle
 
-        # - name: Build with Gradle
-        #   run: ./gradlew build
+        - name: Build with gradle
+          run: ./gradlew build
 
         # - name: Create JAR file
         #   run: ./gradlew jar
