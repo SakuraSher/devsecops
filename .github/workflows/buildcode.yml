@@ -21,12 +21,17 @@ jobs:
           with:
                  java-version: '17'
                  distribution: 'adopt'
-                 cache: gradle
+                 cache: maven
 
 
-        - name: Build with gradle
-          run: ./gradlew build
-
+        - name: cache maven dependencies
+          uses: actions/cache@v3
+          with:
+            path: ~/.m2/repository
+            key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          
+        - name: Build with Maven
+          run: mvn clean install
 
         # - name: Create JAR file
         #   run: ./gradlew jar
