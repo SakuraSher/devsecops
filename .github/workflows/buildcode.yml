@@ -2,8 +2,8 @@ name: Build and Create JAR
 
 # on:
 #     workflow_dispatch:
-  on:
-    workflow_call:
+on:
+  workflow_call:
 
 # on:
 #     push:
