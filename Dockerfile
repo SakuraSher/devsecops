@@ -16,11 +16,11 @@ FROM openjdk:17-alpine
 
 WORKDIR /home/petclinic/
 
-COPY --from=build /app/target/jar.jar . 
+COPY --from=build /app/target/spring-petclinic-3.2.0-SNAPSHOT.jar . 
 # Copy from the 'build' stage
 
 EXPOSE 8080
 
 ENV MYSQL_URL=jdbc:mysql://petclinic-mysql:3306/petclinic
 
-CMD ["java", "-jar", "jar.jar"]
+CMD ["java", "-jar", "spring-petclinic-3.2.0-SNAPSHOT.jar"]
