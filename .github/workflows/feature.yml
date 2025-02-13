@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    uses: ./.github/workflows/javabuild.yml
+    uses: ./.github/workflows/buildcode.yml
     secrets: inherit
   sonar:
      uses: ./.github/workflows/sonar.yml
