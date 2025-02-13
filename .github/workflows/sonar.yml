@@ -1,7 +1,9 @@
 name: SonarQube Analysis
 
-on:
-  workflow_dispatch:
+# on:
+#   workflow_dispatch:
+  on:
+    workflow_call:
 
 jobs:
   sonar:
