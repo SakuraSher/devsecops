@@ -8,6 +8,8 @@ COPY src ./src
 
 RUN mvn package
 
+RUN ls -la 
+
 # Stage 2: Create the final image (copy the JAR from Stage 1)
 FROM openjdk:17-alpine  
 # Use a smaller base image for the final image
