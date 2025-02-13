@@ -22,7 +22,7 @@ jobs:
             docker save ${{ secrets.DOCKER_USERNAME }}/app:latest > app.tar
         
         - name: Docker upload Image Artifact
-          uses: actions/upload-artifact@v3
+          uses: actions/upload-artifact@v4
           with:
             name: app
             path: app.tar
