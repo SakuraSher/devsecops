@@ -1,0 +1,14 @@
+name: CI Pipeline
+on:
+  push:
+    branches:
+      - master 
+
+jobs:
+  build:
+    uses: ./.github/workflows/javabuild.yml
+    secrets: inherit
+  sonar:
+     uses: ./.github/workflows/sonar.yml
+     needs: build
+     secrets: inherit   
