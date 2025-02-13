@@ -9,11 +9,13 @@ COPY src ./src
 RUN mvn package
 
 # Stage 2: Create the final image (copy the JAR from Stage 1)
-FROM openjdk:17-alpine  # Use a smaller base image for the final image
+FROM openjdk:17-alpine  
+# Use a smaller base image for the final image
 
 WORKDIR /home/petclinic/
 
-COPY --from=build /app/target/jar.jar .  # Copy from the 'build' stage
+COPY --from=build /app/target/jar.jar . 
+# Copy from the 'build' stage
 
 EXPOSE 8080
 
