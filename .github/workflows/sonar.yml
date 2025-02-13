@@ -27,9 +27,9 @@ jobs:
 
      
       - name: Run SonarQube Scanner
-        # env:
-        #   SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR }}
         run: |
-          mvn sonar:sonar -Dsonar.projectKey=SakuraSher_devsecops -Dsonar.organization=sakurasher -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+          mvn sonar:sonar -Dsonar.projectKey=SakuraSher_devsecops -Dsonar.organization=sakurasher -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${{ secrets.SONAR }}
        
             
