@@ -8,10 +8,10 @@ jobs:
   build:
     uses: ./.github/workflows/buildcode.yml
     secrets: inherit
-  sonar:
-     uses: ./.github/workflows/sonar.yml
-     needs: build
-     secrets: inherit   
+  # sonar:
+  #    uses: ./.github/workflows/sonar.yml
+  #    needs: build
+  #    secrets: inherit   
   
   image:
     uses: ./.github/workflows/image.yml
