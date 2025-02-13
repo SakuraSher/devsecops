@@ -2,7 +2,8 @@ FROM openjdk:25-oracle
 
 WORKDIR /home/petclinic/
 
-COPY ./spring-petclinic-3.2.0-SNAPSHOT.jar .  
+#COPY ./spring-petclinic-3.2.0-SNAPSHOT.jar .  
+COPY ./target/spring-petclinic-3.2.0-SNAPSHOT.jar . 
 #spring-petclinic-3.2.0-SNAPSHOT
 
 EXPOSE 8080
