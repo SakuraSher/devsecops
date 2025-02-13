@@ -9,5 +9,4 @@ EXPOSE 8080
 
 ENV MYSQL_URL=jdbc:mysql://petclinic-mysql:3306/petclinic
 
-CMD ["java", "-jar", "jar.jar"]
-#spring-petclinic-3.2.0-SNAPSHOT
+CMD ["java", "-jar", "spring-petclinic-3.2.0-SNAPSHOT.jar"]
